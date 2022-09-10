@@ -9,7 +9,13 @@
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
@@ -20,19 +26,25 @@
                 >
                 <nav>
                     <ul class="site-nav list">
-                        <li><a class="link" href="./index.html">Студія</a></li>
-                        <li><a class="link current" href="#">Портфоліо</a></li>
-                        <li><a class="link" href="#">Контакти</a></li>
+                        <li class="site-nav-item">
+                            <a class="link" href="./index.html">Студія</a>
+                        </li>
+                        <li class="site-nav-item">
+                            <a class="link current" href="#">Портфоліо</a>
+                        </li>
+                        <li class="site-nav-item">
+                            <a class="link" href="#">Контакти</a>
+                        </li>
                     </ul>
                 </nav>
 
                 <ul class="contacts">
-                    <li>
+                    <li class="contacts-item">
                         <a class="contacts" href="mailto:info@devstudio.com"
                             >info@devstudio.com</a
                         >
                     </li>
-                    <li>
+                    <li class="contacts-item">
                         <a class="contacts" href="tel:+380961111111"
                             >+38 096 111 11 11</a
                         >
@@ -45,17 +57,45 @@
                 <div class="container">
                     <h1 class="visually-hidden">Портфоліо</h1>
                     <ul class="portfolio-btn-list">
-                        <li><button class="button-filter" type="button">Усі</button></li>
-                        <li><button class="button-filter" type="button">Веб-сайти</button></li>
-                        <li><button class="button-filter" type="button">Додатки</button></li>
-                        <li><button class="button-filter" type="button">Дизайн</button></li>
-                        <li><button class="button-filter" type="button">Маркетинг</button></li>
+                        <li class="portfolio-btn-item">
+                            <button class="button-filter" type="button">
+                                Усі
+                            </button>
+                        </li>
+                        <li class="portfolio-btn-item">
+                            <button class="button-filter" type="button">
+                                Веб-сайти
+                            </button>
+                        </li>
+                        <li class="portfolio-btn-item">
+                            <button class="button-filter" type="button">
+                                Додатки
+                            </button>
+                        </li>
+                        <li class="portfolio-btn-item">
+                            <button class="button-filter" type="button">
+                                Дизайн
+                            </button>
+                        </li>
+                        <li class="portfolio-btn-item">
+                            <button
+                                class="button-filter marketing"
+                                type="button"
+                            >
+                                Маркетинг
+                            </button>
+                        </li>
                     </ul>
 
                     <ul class="portfolio-list">
-                        <li>
+                        <li class="portfolio-item">
                             <a href="#">
-                                <img src="./images/open-laptop.jpg" alt="Відкритий ноутбук" width="370" height="294"/>
+                                <img
+                                    src="./images/open-laptop.jpg"
+                                    alt="Відкритий ноутбук"
+                                    width="370"
+                                    height="294"
+                                />
                                 <div class="portfolio-text">
                                     <h2 class="portfolio-title">Технокряк</h2>
                                     <p class="portfolio-type">Веб-сайт</p>
@@ -63,69 +103,116 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-item">
                             <a href="#">
-                                <img src="./images/sport-players.jpg" alt="Два гравця грають у баскетбол" width="370" height="294"/>
+                                <img
+                                    src="./images/sport-players.jpg"
+                                    alt="Два гравця грають у баскетбол"
+                                    width="370"
+                                    height="294"
+                                />
                                 <div class="portfolio-text">
-                                    <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+                                    <h2 class="portfolio-title">
+                                        Постер New Orlean vs Golden Star
+                                    </h2>
                                     <p class="portfolio-type">Дизайн</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-item">
                             <a href="#">
-                                <img src="./images/seafood-logo.jpg" alt="Логотип ресторана Seafood" width="370" height="294"/>
+                                <img
+                                    src="./images/seafood-logo.jpg"
+                                    alt="Логотип ресторана Seafood"
+                                    width="370"
+                                    height="294"
+                                />
                                 <div class="portfolio-text">
-                                    <h2 class="portfolio-title">Ресторан Seafood</h2>
+                                    <h2 class="portfolio-title">
+                                        Ресторан Seafood
+                                    </h2>
                                     <p class="portfolio-type">Додаток</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-item">
                             <a href="#">
-                                <img src="./images/headphones.jpg" alt="Навушники" width="370" height="294"/>
+                                <img
+                                    src="./images/headphones.jpg"
+                                    alt="Навушники"
+                                    width="370"
+                                    height="294"
+                                />
                                 <div class="portfolio-text">
-                                    <h2 class="portfolio-title">Проєкт Prime</h2>
+                                    <h2 class="portfolio-title">
+                                        Проєкт Prime
+                                    </h2>
                                     <p class="portfolio-type">Маркетинг</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-item">
                             <a href="#">
-                                <img src="./images/2boxes.jpg" alt="Біла та коричнева коробки" width="370" height="294"/>
+                                <img
+                                    src="./images/2boxes.jpg"
+                                    alt="Біла та коричнева коробки"
+                                    width="370"
+                                    height="294"
+                                />
                                 <div class="portfolio-text">
-                                    <h2 class="portfolio-title">Проєкт Boxes</h2>
+                                    <h2 class="portfolio-title">
+                                        Проєкт Boxes
+                                    </h2>
                                     <p class="portfolio-type">Додаток</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-item">
                             <a href="#">
-                                <img src="./images/screen.jpg" alt="Монітор" width="370" height="294"/>
+                                <img
+                                    src="./images/screen.jpg"
+                                    alt="Монітор"
+                                    width="370"
+                                    height="294"
+                                />
                                 <div class="portfolio-text">
-                                    <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                                    <h2 class="portfolio-title">
+                                        Inspiration has no Borders
+                                    </h2>
                                     <p class="portfolio-type">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-item">
                             <a href="#">
-                                <img src="./images/open-book.jpg" alt="Відкрита книжка" width="370" height="294"/>
+                                <img
+                                    src="./images/open-book.jpg"
+                                    alt="Відкрита книжка"
+                                    width="370"
+                                    height="294"
+                                />
                                 <div class="portfolio-text">
-                                    <h2 class="portfolio-title">Видання Limited Edition</h2>
+                                    <h2 class="portfolio-title">
+                                        Видання Limited Edition
+                                    </h2>
                                     <p class="portfolio-type">Дизайн</p>
                                 </div>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-item">
                             <a href="#">
-                                <img src="./images/tag-lab.jpg" alt="Бірка Lab el tag" width="370" height="294"/>
+                                <img
+                                    src="./images/tag-lab.jpg"
+                                    alt="Бірка Lab el tag"
+                                    width="370"
+                                    height="294"
+                                />
                                 <div class="portfolio-text">
                                     <h2 class="portfolio-title">Проєкт LAB</h2>
                                     <p class="portfolio-type">Маркетинг</p>
@@ -133,11 +220,18 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-item">
                             <a href="#">
-                                <img src="./images/working-laptop.jpg" alt="Людина працює за ноутбуком" width="370" height="294"/>
+                                <img
+                                    src="./images/working-laptop.jpg"
+                                    alt="Людина працює за ноутбуком"
+                                    width="370"
+                                    height="294"
+                                />
                                 <div class="portfolio-text">
-                                    <h2 class="portfolio-title">Growing Business</h2>
+                                    <h2 class="portfolio-title">
+                                        Growing Business
+                                    </h2>
                                     <p class="portfolio-type">Додаток</p>
                                 </div>
                             </a>
@@ -148,18 +242,32 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <a href="./index.html"><span class="logo logo-web">Web</span><span class="logo logo-studio">Studio</span></a>
+                <a href="./index.html"
+                    ><span class="logo logo-web">Web</span
+                    ><span class="logo logo-studio">Studio</span></a
+                >
                 <address class="address">
                     <ul>
                         <li>
-                            <a class="address-google-maps" href="https://goo.gl/maps/dBgwdmVwpfKGemKN6" target="_blank"
-                                rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
+                            <a
+                                class="address-google-maps"
+                                href="https://goo.gl/maps/dBgwdmVwpfKGemKN6"
+                                target="_blank"
+                                rel="noopener noreferrer nofollow"
+                                >м. Київ, пр-т Лесі Українки, 26</a
+                            >
                         </li>
                         <li>
-                            <a class="footer-contacts footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            <a
+                                class="footer-contacts footer-mail"
+                                href="mailto:info@devstudio.com"
+                                >info@devstudio.com</a
+                            >
                         </li>
                         <li>
-                            <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+                            <a class="footer-contacts" href="tel:+380961111111"
+                                >+38 096 111 11 11</a
+                            >
                         </li>
                     </ul>
                 </address>

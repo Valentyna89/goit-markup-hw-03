@@ -30,6 +30,13 @@ ul {
     list-style: none;
 }
 
+img {
+    display: block;
+}
+
+p {
+    margin: 0;
+}
 a {
     text-decoration: none;
 }
@@ -56,7 +63,15 @@ a {
 /* Header without logo */
 
 .header {
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .link {
@@ -67,10 +82,13 @@ a {
     letter-spacing: 0.02em;
 }
 
-.site-nav .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .site-nav-item + .site-nav-item {
+    margin-left: 50px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -83,10 +101,17 @@ a {
 /* Contacts */
 
 .contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .contacts:hover,
@@ -97,11 +122,9 @@ a {
 /* Hero */
 
 .hero {
+    padding: 200px 0;
     margin-bottom: 96px;
 
-    position: absolute;
-    width: 1600px;
-    
     background-color: var(--bg-color);
     text-align: center;
 }
@@ -162,6 +185,14 @@ a {
     margin: -1px;
 }
 
+.feature-list {
+    display: flex;
+}
+
+.feature-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .feature-list .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -197,10 +228,24 @@ a {
     text-align: center;
 }
 
+.section-photo-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Our team */
 
-.team {
+.team-list {
+    display: flex;
+}
+
+.team-item {
     background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .section-team {
@@ -225,7 +270,7 @@ a {
     padding-top: 30px;
 }
 
-.team-list .team-name {
+.team-name {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -235,9 +280,8 @@ a {
     line-height: 1.19;
 }
 
-.team-list .team-position {
-    margin-top: 0;
-    margin-bottom: 30px;
+.team-position {
+    padding-bottom: 30px;
 
     font-size: 16px;
     line-height: 1.19;
@@ -246,10 +290,16 @@ a {
 /* Portfolio */
 
 .portfolio-btn-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding-top: 94px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
+.portfolio-btn-list .portfolio-btn-item:not(:last-child) {
+    margin-right: 8px;
+}
 .button-filter {
     padding: 6px 22px;
 
@@ -258,15 +308,13 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    border-color: var(--secondary-bg-color);
+    border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 .button-filter:hover,
 .button-filter:focus {
-    padding: 6px 25px;
-
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -276,17 +324,31 @@ a {
 }
 
 .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-bottom: 94px;
 }
 
+.portfolio-item {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+
 .portfolio-text {
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
     padding: 20px 24px;
 }
 
 .portfolio-title {
     margin: 0;
     margin-bottom: 4px;
-       
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -297,20 +359,17 @@ a {
 
 .portfolio-type {
     margin: 0;
-    
+
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
 }
-
-/* Line */
 
 /* Footer */
 
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 215px;
     background-color: var(--bg-color);
     line-height: 1.71;
 }
