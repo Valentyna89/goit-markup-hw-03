@@ -55,6 +55,10 @@ a {
 
 /* Header without logo */
 
+.header {
+    border: 1px solid #ececec;
+}
+
 .link {
     color: var(--title-text-color);
     font-weight: 500;
@@ -63,6 +67,11 @@ a {
     letter-spacing: 0.02em;
 }
 
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -85,20 +94,22 @@ a {
     color: var(--accent-color);
 }
 
-
 /* Hero */
 
 .hero {
     margin-bottom: 96px;
 
+    position: absolute;
+    width: 1600px;
+    
     background-color: var(--bg-color);
     text-align: center;
 }
 
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 696px;
 
     color: var(--primary-white-color);
     font-weight: 900;
@@ -122,6 +133,7 @@ a {
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     cursor: pointer;
 }
 
@@ -134,7 +146,7 @@ a {
 /* Features */
 
 .section-features {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -153,7 +165,7 @@ a {
 .feature-list .title {
     margin-top: 0;
     margin-bottom: 10px;
-    
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -171,7 +183,7 @@ a {
 /* Section Photo */
 
 .section-photo {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .section-photo-title {
@@ -201,7 +213,7 @@ a {
     margin-top: 0;
     margin-bottom: 50px;
     padding-top: 94px;
-    
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -222,7 +234,7 @@ a {
 .team-list .team-position {
     margin-top: 0;
     margin-bottom: 30px;
-    
+
     font-size: 16px;
     line-height: 1.19;
 }
@@ -230,11 +242,8 @@ a {
 /* Portfolio */
 
 .portfolio-btn-list {
-    margin-bottom: 34px;
-}
-
-.portfolio-list {
-    margin-bottom: 94px;
+    padding-top: 94px;
+    margin-bottom: 50px;
 }
 
 .button-filter {
@@ -261,9 +270,13 @@ a {
     border-radius: 4px;
 }
 
+.portfolio-list {
+    padding-bottom: 94px;
+}
 .portfolio-title {
-    margin-top: 20;
-    margin-bottom: 4px;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 4px;
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -273,17 +286,22 @@ a {
 }
 
 .portfolio-type {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
+    padding-bottom: 20px;
 
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
 }
 
+/* Line */
+
 /* Footer */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 215px;
     background-color: var(--bg-color);
     line-height: 1.71;
 }
@@ -298,11 +316,19 @@ a {
 }
 
 .address .address-google-maps {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 9px;
     color: var(--primary-white-color);
 }
 
 .footer-contacts {
     color: var(--secondary-text-color);
+}
+
+.footer-mail {
+    display: block;
+    margin-bottom: 9px;
 }
 
 .footer-contacts:hover,
