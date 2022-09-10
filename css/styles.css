@@ -221,6 +221,10 @@ a {
     text-align: center;
 }
 
+.team-text {
+    padding-top: 30px;
+}
+
 .team-list .team-name {
     margin-top: 0;
     margin-bottom: 10px;
@@ -274,10 +278,15 @@ a {
 .portfolio-list {
     padding-bottom: 94px;
 }
+
+.portfolio-text {
+    padding: 20px 24px;
+}
+
 .portfolio-title {
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
+       
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -288,8 +297,7 @@ a {
 
 .portfolio-type {
     margin: 0;
-    padding-bottom: 20px;
-
+    
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
