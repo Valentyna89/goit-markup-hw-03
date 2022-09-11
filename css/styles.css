@@ -6,6 +6,7 @@
     --primary-white-color: #ffffff;
     --bg-color: #2f303a;
     --secondary-bg-color: #f5f4fa;
+    --header-border-color: #ececec;
 }
 
 body {
@@ -32,6 +33,7 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
 }
 
 p {
@@ -40,6 +42,7 @@ p {
 a {
     text-decoration: none;
 }
+
 
 /* Лого */
 
@@ -63,18 +66,18 @@ a {
 /* Header without logo */
 
 .header {
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid var(--header-border-color);
 }
 
 .main-nav {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -104,6 +107,10 @@ a {
     display: flex;
     align-items: center;
     margin-left: auto;
+}
+.contacts-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -114,8 +121,8 @@ a {
     margin-right: 50px;
 }
 
-.contacts:hover,
-.contacts:focus {
+.contacts-link:hover,
+.contacts-link:focus {
     color: var(--accent-color);
 }
 
@@ -123,7 +130,6 @@ a {
 
 .hero {
     padding: 200px 0;
-    margin-bottom: 96px;
 
     background-color: var(--bg-color);
     text-align: center;
@@ -169,6 +175,7 @@ a {
 /* Features */
 
 .section-features {
+    padding-top: 96px;
     padding-bottom: 94px;
 }
 
@@ -230,7 +237,7 @@ a {
 
 .section-photo-list {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 /* Our team */
@@ -241,7 +248,8 @@ a {
 
 .team-item {
     background-color: var(--primary-white-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 .team-item:not(:last-child) {
@@ -249,6 +257,7 @@ a {
 }
 
 .section-team {
+    padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--secondary-bg-color);
     text-align: center;
@@ -257,7 +266,7 @@ a {
 .section-team-title {
     margin-top: 0;
     margin-bottom: 50px;
-    padding-top: 94px;
+    
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -268,6 +277,7 @@ a {
 
 .team-text {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-name {
@@ -281,7 +291,6 @@ a {
 }
 
 .team-position {
-    padding-bottom: 30px;
 
     font-size: 16px;
     line-height: 1.19;
@@ -289,12 +298,14 @@ a {
 
 /* Portfolio */
 
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .portfolio-btn-list {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding-top: 94px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .portfolio-btn-list .portfolio-btn-item:not(:last-child) {
@@ -325,18 +336,9 @@ a {
 
 .portfolio-list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 94px;
-}
-
-.portfolio-item {
-    margin-right: 30px;
-    margin-top: 30px;
-}
-
-.portfolio-item:nth-child(3n) {
-    margin-right: 0;
+    gap: 30px;
+    
 }
 
 .portfolio-text {
@@ -375,6 +377,7 @@ a {
 }
 
 .address {
+    margin-top: 20px;
     font-style: normal;
     font-weight: 400;
 }
@@ -385,7 +388,6 @@ a {
 
 .address .address-google-maps {
     display: block;
-    margin-top: 20px;
     margin-bottom: 9px;
     color: var(--primary-white-color);
 }
